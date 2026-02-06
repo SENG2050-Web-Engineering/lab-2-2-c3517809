@@ -57,6 +57,6 @@ ctx.addServletMappingDecoded("/SimpleMessage", "SimpleMessage");
 tomcat.addServlet("","generateValidHTML",new generateValidHTML());
 
 //Mapping my new servlet
-ctx.addServletMappingDecoded("/generateValidHTML", "generateValidHTML");
+ctx.addServletMappingDecoded("/ValidHTML", "generateValidHTML");
   }
 }
