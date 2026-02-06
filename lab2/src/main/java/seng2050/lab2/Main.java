@@ -39,15 +39,15 @@ public class Main {
     ctx.addServletMappingDecoded("/HelloWorld", "HelloWorldServlet");
 
         // Add and map the servlet
-tomcat.addServlet("", "SimpleMessage", new SimpleMessage());
-ctx.addServletMappingDecoded("/SimpleMessage", "SimpleMessage");
+    tomcat.addServlet("", "SimpleMessage", new SimpleMessage());
+    ctx.addServletMappingDecoded("/SimpleMessage", "SimpleMessage");
 
 
-//Adding my new servlet
-tomcat.addServlet("", "generateValidHTML",new generateValidHTML());
+    //Adding my new servlet
+    tomcat.addServlet("", "generateValidHTML",new generateValidHTML());
 
-//Mapping my new servlet
-ctx.addServletMappingDecoded("/ValidHTML", "generateValidHTML");
+    //Mapping my new servlet
+    ctx.addServletMappingDecoded("/ValidHTML", "generateValidHTML");
 
     // Start Tomcat
     try {
