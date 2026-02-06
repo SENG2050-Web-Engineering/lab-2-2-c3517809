@@ -8,9 +8,9 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-public class generateValidHTML extends HttpServlet{
-    protected void doGet(HttpServletRequest req,HttpServletResponse resp)
-    throws ServletException, IOException{
+public class generateValidHTML extends HttpServlet {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+    throws ServletException, IOException {
         PrintWriter out = resp.getWriter();
         out.println("<!DOCTYPE html>");
         out.println("<html>");
