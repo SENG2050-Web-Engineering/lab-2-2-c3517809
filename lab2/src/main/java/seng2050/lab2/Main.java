@@ -47,5 +47,10 @@ public class Main {
     } catch (LifecycleException e) {
       e.printStackTrace();
     }
+
+    // Add and map the servlet
+tomcat.addServlet("", "SimpleMessage", new SimpleMessage());
+ctx.addServletMappingDecoded("/SimpleMessage", "SimpleMessage");
+
   }
 }
