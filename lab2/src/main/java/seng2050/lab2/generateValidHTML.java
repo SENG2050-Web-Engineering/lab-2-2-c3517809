@@ -17,7 +17,7 @@ public class generateValidHTML extends HttpServlet{
         out.println("<head> <title> Valid Page </title> </head>");
         out.println("<body>");
         out.println("<h1> You have a valid HTML Document </h1>");
-        out.println("<p> This document has opened and validated successfully, congratulations</p>")
+        out.println("<p> This document has opened and validated successfully, congratulations</p>");
         out.println("</body>");
         out.println("<html>");
     }
