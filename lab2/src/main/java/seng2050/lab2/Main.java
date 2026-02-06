@@ -52,5 +52,11 @@ public class Main {
 tomcat.addServlet("", "SimpleMessage", new SimpleMessage());
 ctx.addServletMappingDecoded("/SimpleMessage", "SimpleMessage");
 
+
+//Adding my new servlet
+tomcat.addServlet("","generateValidHTML",new generateValidHTML());
+
+//Mapping my new servlet
+ctx.addServletMappingDecoded("/generateValidHTML", "generateValidHTML");
   }
 }
